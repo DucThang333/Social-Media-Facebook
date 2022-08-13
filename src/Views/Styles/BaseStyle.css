@@ -16,15 +16,17 @@ body{
     --color-gray: rgba(96,103,112,1.0);
     --color-gray-80light: rgba(96,103,112,0.8);
     --color-gray-light: rgba(240,242,245,1.0);
+    --color-gray-ligth-blue: rgba(216,217,220,1.0);
     --color-light:rgba(240,242,245,1.0);
-
     --color-gray-dim: rgba(3, 3, 3, 0.08);
     --color-gray-dim-125dark: rgba(3, 3, 3, 0.1);
+    --color-gray-dim-150dark: rgba(3, 3, 3, 0.12);
     --color-gray-dim-175dark: rgba(3, 3, 3, 0.14);
     /* text */
     --text-primary: rgba(5,5,5,1.0);
     --text-gray: rgba(154,158,165,1.0);
     --text-blue:rgba(24,119,242,1.0);
+    --text-gray-dim:rgba(3, 3, 3, 0.356);
 
     --font-family-sans: 'Source Sans Pro', sans-serif;
 }
@@ -45,9 +47,11 @@ hr{
 .img-square-border{
     border-radius: 5px;
 }
-.img-square-cicle{
+.img-cicle{
     border-radius: 50%;
 }
 button{
     cursor: pointer;
 }
+
+
