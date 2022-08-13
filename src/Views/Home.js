@@ -5,8 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
 import {
     faMagnifyingGlass, faHouse, faTv, faStore, faPeopleGroup, faChessBoard,
-    faRectangleList, faBell, faCaretDown, faAngleDown
+    faRectangleList, faBell, faCaretDown, faAngleDown, faAngleLeft, faAngleRight, faVideo, faEllipsis
 } from '@fortawesome/free-solid-svg-icons';
+import imgIcon from './Imgs/Icons/icon.png';
 
 
 function Home() {
@@ -25,29 +26,29 @@ function Home() {
                     </div>
                 </div>
                 <div className="header__feature">
-                    <ul className="header__feature--element">
+                    <ul className="header__feature--element header__link">
                         <a href="#">
-                            <li className="header__feature--link active">
+                            <li className="header__link--element active">
                                 <FontAwesomeIcon icon={faHouse} />
                             </li>
                         </a>
                         <a href="#">
-                            <li className="header__feature--link">
+                            <li className="header__link--element">
                                 <FontAwesomeIcon icon={faTv} />
                             </li>
                         </a>
                         <a href="#">
-                            <li className="header__feature--link">
+                            <li className="header__link--element">
                                 <FontAwesomeIcon icon={faStore} />
                             </li>
                         </a>
                         <a href="#">
-                            <li className="header__feature--link">
+                            <li className="header__link--element">
                                 <FontAwesomeIcon icon={faPeopleGroup} />
                             </li>
                         </a>
                         <a href="#">
-                            <li className="header__feature--link">
+                            <li className="header__link--element">
                                 <FontAwesomeIcon icon={faChessBoard} />
                             </li>
                         </a>
@@ -92,7 +93,7 @@ function Home() {
                                 <div className="content__list--img">
                                     <img className="img-cicle" src="https://scontent.fhan3-1.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p80x80&_nc_cat=1&ccb=1-7&_nc_sid=7206a8&_nc_ohc=HHUCejY7sHwAX9Pz4_v&_nc_ht=scontent.fhan3-1.fna&oh=00_AT-Fo5pzvUkDNIXaAKxGW41ozW5BHYSFmQmCQ7Gi4PyiFA&oe=631991F8" />
                                 </div>
-                                <div className="content__list--name"><p>Lưu Thắng11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</p></div>
+                                <div className="content__list--name"><p>Lưu Thắng</p></div>
                             </li>
                         </a>
                         <a href="#">
@@ -242,8 +243,43 @@ function Home() {
                 </div>
                 <div className="container__main">
                     <div className="container__content">
-                        <div className="container__content--block"></div>
-                        <div className="container__content--block"></div>
+                        <div className="container__content--block container__content--news">
+                            <div className="container__content--news-action">
+                                <div className="header__link">
+                                    <a href="#">
+                                        <div className="header__link--element active">
+                                            <p className="header__link--element-title">Tin</p>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div className="header__link--element">
+                                            <p className="header__link--element-title">Rells</p>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div className="header__link--element">
+                                            <p className="header__link--element-title">Phong họp mặt</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="container__content--news-reels">
+                                <div className="container__content--news-reels-pre frame-icon-cicle">
+                                    <FontAwesomeIcon icon={faAngleLeft} />
+                                </div>
+                                <div className="container__content--news-reels-next frame-icon-cicle">
+                                    <FontAwesomeIcon icon={faAngleRight} />
+                                </div>
+                                <div className="container__content--news-box"></div>
+                                <div className="container__content--news-box"></div>
+                                <div className="container__content--news-box"></div>
+                                <div className="container__content--news-box"></div>
+                                <div className="container__content--news-box"></div>
+                                <div className="container__content--news-box"></div>
+                                <div className="container__content--news-box"></div>
+                            </div>
+                        </div>
+                        <div className="container__content--block container__content--action"></div>
                         <div className="container__content--block"></div>
                     </div>
                 </div>
@@ -274,97 +310,78 @@ function Home() {
                         </a>
                     </ul>
                     <hr></hr>
-                    <ul className="content__list container__left--shortcuts">
-                        <div className="container__left--edit">
-                            <h3 className="title--list">Lối tắt của bạn</h3>
-                            <button>Chỉnh Sửa</button>
+                    <ul className="content__list container__right--dob">
+                        <h3 className="title--list">Sinh nhật</h3>
+                        <a href="#">
+                            <li className="content__list--link" >
+                                <div className="content__list--img">
+                                    <img className="img-icon1" src={imgIcon} />
+                                </div>
+                                <div className="content__list--name">
+                                    <div className="line">
+                                        <p className="content__list--name-des">Hôm nay là sinh nhật của </p>
+                                        <p>Lưu Thắng</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li className="content__list--link" >
+                                <div className="content__list--img">
+                                    <img className="img-icon1" src={imgIcon} />
+                                </div>
+                                <div className="content__list--name">
+                                    <div className="line">
+                                        <p className="content__list--name-des">Hôm nay là sinh nhật của </p>
+                                        <p>ABC</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                    </ul>
+                    <hr></hr>
+                    <ul className="content__list container__right-friend">
+                        <div className="container__right--edit">
+                            <h3 className="title--list">Người liên hệ</h3>
+                            <div className="container__right--edit-feature">
+                                <a href="#">
+                                    <div className="container__right--edit-link">
+                                        <FontAwesomeIcon icon={faVideo} />
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div className="container__right--edit-link">
+                                        <FontAwesomeIcon icon={faMagnifyingGlass} />
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div className="container__right--edit-link">
+                                        <FontAwesomeIcon icon={faEllipsis} />
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                         <a href="#">
                             <li className="content__list--link" >
                                 <div className="content__list--img">
-                                    <img className="img-square-border" src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.2081-6/223927767_4253463241359810_4458406223346967396_n.png?stp=c5.5.50.50a_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=eaa83b&_nc_ohc=7xhXQ-ffk2sAX-YazPR&tn=snIIirA4BFkDl06K&_nc_ht=scontent.fhan3-1.fna&oh=00_AT9aQ6b45IGwqsgEnPPoDIvNmAwX7gkkpCP_uzYFtwStTg&oe=62FA77F4" />
+                                    <img className="img-cicle" src="https://scontent.fhan3-1.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p80x80&_nc_cat=1&ccb=1-7&_nc_sid=7206a8&_nc_ohc=HHUCejY7sHwAX9Pz4_v&_nc_ht=scontent.fhan3-1.fna&oh=00_AT-Fo5pzvUkDNIXaAKxGW41ozW5BHYSFmQmCQ7Gi4PyiFA&oe=631991F8" />
+                                    <div className="content__list--img-status">
+                                        <p>45 phút</p>
+                                    </div>
                                 </div>
-                                <div className="content__list--name"><p>Merger The Numbers</p></div>
+                                <div className="content__list--name">
+                                    <p>Lưu Thắng</p>
+                                </div>
                             </li>
                         </a>
                         <a href="#">
                             <li className="content__list--link" >
                                 <div className="content__list--img">
-                                    <img className="img-square-border" src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.2081-6/115803868_1632927190200218_7726110434222976102_n.png?stp=c5.5.50.50a_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=eaa83b&_nc_ohc=lu444I3K82cAX97fkNb&_nc_ht=scontent.fhan3-1.fna&oh=00_AT9KaWX6CYW88CLkcvGVsMD5K4PUEKDCdNOw7j5b46kIGA&oe=62F9E898" />
+                                    <img className="img-cicle" src="https://scontent.fhan3-1.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p80x80&_nc_cat=1&ccb=1-7&_nc_sid=7206a8&_nc_ohc=HHUCejY7sHwAX9Pz4_v&_nc_ht=scontent.fhan3-1.fna&oh=00_AT-Fo5pzvUkDNIXaAKxGW41ozW5BHYSFmQmCQ7Gi4PyiFA&oe=631991F8" />
+                                    <div className="content__list--img-status active">
+                                    </div>
                                 </div>
-                                <div className="content__list--name"><p>Cờ Caro</p></div>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li className="content__list--link" >
-                                <div className="content__list--img">
-                                    <img className="img-square-border" src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.2081-6/51747089_2066810686767119_6654310943293440000_n.png?stp=c5.5.50.50a_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=eaa83b&_nc_ohc=q9_PtW4DniQAX_OTBYF&tn=snIIirA4BFkDl06K&_nc_ht=scontent.fhan3-1.fna&oh=00_AT-M8a3bx7WovmH6I11u0SfGAIHV0paOG6fW4UjT-M5gpQ&oe=62F9B6A1" />
-                                </div>
-                                <div className="content__list--name"><p>Onet Connect Animal</p></div>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li className="content__list--link" >
-                                <div className="content__list--img">
-                                    <img className="img-square-border" src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.2081-6/138477957_2846759298870959_2263282373038840357_n.png?stp=c5.5.50.50a_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=eaa83b&_nc_ohc=hPgkvWHqawMAX8TznNA&_nc_ht=scontent.fhan3-1.fna&oh=00_AT-qqYTeDUw8Hgh6WSki9W7z0fjcXMIJZC-7CU1hwbXvkg&oe=62F9557B" />
-                                </div>
-                                <div className="content__list--name"><p>Sâm Lốc 2021</p></div>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li className="content__list--link" >
-                                <div className="content__list--img">
-                                    <img className="img-square-border" src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.2081-6/42630609_2166936443330818_3464735768197464064_n.png?stp=c5.5.50.50a_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=eaa83b&_nc_ohc=15ZIE3BXE8oAX-xW24G&_nc_ht=scontent.fhan3-1.fna&oh=00_AT-lItyPTbj7SC_NBZLdTynOqInFKqnWhYrMWM-t_sQH5w&oe=62F9ABAF" />
-                                </div>
-                                <div className="content__list--name"><p>8 Boll Pool</p></div>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li className="content__list--link" >
-                                <div className="content__list--icon">
-                                    <FontAwesomeIcon icon={faAngleDown} />
-                                </div>
-                                <div className="content__list--name"><p>Xem thêm</p></div>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li className="content__list--link" >
-                                <div className="content__list--icon">
-                                    <FontAwesomeIcon icon={faAngleDown} />
-                                </div>
-                                <div className="content__list--name"><p>Xem thêm</p></div>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li className="content__list--link" >
-                                <div className="content__list--icon">
-                                    <FontAwesomeIcon icon={faAngleDown} />
-                                </div>
-                                <div className="content__list--name"><p>Xem thêm</p></div>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li className="content__list--link" >
-                                <div className="content__list--icon">
-                                    <FontAwesomeIcon icon={faAngleDown} />
-                                </div>
-                                <div className="content__list--name"><p>Xem thêm</p></div>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li className="content__list--link" >
-                                <div className="content__list--icon">
-                                    <FontAwesomeIcon icon={faAngleDown} />
-                                </div>
-                                <div className="content__list--name"><p>Xem thêm</p></div>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li className="content__list--link" >
-                                <div className="content__list--icon">
-                                    <FontAwesomeIcon icon={faAngleDown} />
-                                </div>
-                                <div className="content__list--name"><p>Xem thêm</p></div>
+                                <div className="content__list--name"><p>ABCD</p></div>
                             </li>
                         </a>
                     </ul>

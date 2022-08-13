@@ -13,6 +13,8 @@ body{
     --color-white:rgba(255, 255 ,255, 1);
     --color-black:rgba(51,51, 51, 1);
     --color-blue: rgba(8,122,234,1.0);
+    --color-green: rgba(49,162,76,1.0);
+    --color-green-light: rgba(222,239,225,1.0);
     --color-gray: rgba(96,103,112,1.0);
     --color-gray-80light: rgba(96,103,112,0.8);
     --color-gray-light: rgba(240,242,245,1.0);
@@ -26,7 +28,9 @@ body{
     --text-primary: rgba(5,5,5,1.0);
     --text-gray: rgba(154,158,165,1.0);
     --text-blue:rgba(24,119,242,1.0);
+    --text-green:rgba(49,162,76,1.0);
     --text-gray-dim:rgba(3, 3, 3, 0.356);
+    --text-gray-dim-light:rgba(3, 3, 3, 0.1);
 
     --font-family-sans: 'Source Sans Pro', sans-serif;
 }
@@ -53,5 +57,17 @@ hr{
 button{
     cursor: pointer;
 }
-
+p {
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+.line{
+    display: flex;
+}
+.frame-icon-cicle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
 
