@@ -31,7 +31,7 @@ body{
     --text-green:rgba(49,162,76,1.0);
     --text-gray-dim:rgba(3, 3, 3, 0.356);
     --text-gray-dim-light:rgba(3, 3, 3, 0.1);
-
+    
     --font-family-sans: 'Source Sans Pro', sans-serif;
 }
 
@@ -71,3 +71,9 @@ p {
     border-radius: 50%;
 }
 
+.click{
+    cursor: pointer;
+}
+input{
+    outline: none;
+}

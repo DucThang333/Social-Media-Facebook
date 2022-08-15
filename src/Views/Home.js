@@ -264,10 +264,10 @@ function Home() {
                                 </div>
                             </div>
                             <div className="container__content--news-reels">
-                                <div className="container__content--news-reels-pre frame-icon-cicle">
+                                <div className="container__content--news-reels-pre frame-icon-cicle click">
                                     <FontAwesomeIcon icon={faAngleLeft} />
                                 </div>
-                                <div className="container__content--news-reels-next frame-icon-cicle">
+                                <div className="container__content--news-reels-next frame-icon-cicle click">
                                     <FontAwesomeIcon icon={faAngleRight} />
                                 </div>
                                 <div className="container__content--news-box"></div>
@@ -277,9 +277,27 @@ function Home() {
                                 <div className="container__content--news-box"></div>
                                 <div className="container__content--news-box"></div>
                                 <div className="container__content--news-box"></div>
+                                <div className="container__content--news-box"></div>
+                                <div className="container__content--news-box"></div>
+                                <div className="container__content--news-box"></div>
+                                <div className="container__content--news-box"></div>
+                                <div className="container__content--news-box"></div>
+                                <div className="container__content--news-box"></div>
                             </div>
                         </div>
-                        <div className="container__content--block container__content--action"></div>
+
+                        <div className="container__content--block container__content--action">
+                            <div className="container__content--action-post">
+                                <img className="img-cicle" src="https://scontent.fhan3-1.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p80x80&_nc_cat=1&ccb=1-7&_nc_sid=7206a8&_nc_ohc=HHUCejY7sHwAX9Pz4_v&_nc_ht=scontent.fhan3-1.fna&oh=00_AT-Fo5pzvUkDNIXaAKxGW41ozW5BHYSFmQmCQ7Gi4PyiFA&oe=631991F8" />
+                                <input type={'text'} placeholder="ơi , bạn đang nghĩ gì thế" />
+                            </div>
+                            <hr></hr>
+                            <div className="container__content--action-pofeaturest">
+                                
+                            </div>
+                        </div>
+                        <div className="container__content--block"></div>
+                        <div className="container__content--block"></div>
                         <div className="container__content--block"></div>
                     </div>
                 </div>
