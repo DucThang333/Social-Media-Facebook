@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -13,6 +14,7 @@ body{
     --color-white:rgba(255, 255 ,255, 1);
     --color-black:rgba(51,51, 51, 1);
     --color-blue: rgba(8,122,234,1.0);
+    --color-blue-gray: rgba(56, 83, 111, 0.845);
     --color-green: rgba(49,162,76,1.0);
     --color-green-light: rgba(222,239,225,1.0);
     --color-gray: rgba(96,103,112,1.0);
@@ -24,6 +26,9 @@ body{
     --color-gray-dim-125dark: rgba(3, 3, 3, 0.1);
     --color-gray-dim-150dark: rgba(3, 3, 3, 0.12);
     --color-gray-dim-175dark: rgba(3, 3, 3, 0.14);
+    --color-red:rgba(243,66,95,1.0);
+    --color-yellow:rgba(247,185,40,1.0);
+    --color-red: rgb(150, 16, 16);
     /* text */
     --text-primary: rgba(5,5,5,1.0);
     --text-gray: rgba(154,158,165,1.0);
@@ -31,7 +36,8 @@ body{
     --text-green:rgba(49,162,76,1.0);
     --text-gray-dim:rgba(3, 3, 3, 0.356);
     --text-gray-dim-light:rgba(3, 3, 3, 0.1);
-    
+    --text-white: #fff;
+    --text-error: rgb(182, 4, 4);
     --font-family-sans: 'Source Sans Pro', sans-serif;
 }
 
